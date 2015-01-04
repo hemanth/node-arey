@@ -1,0 +1,33 @@
+{
+  "name": "arey",
+  "version": "0.1.0",
+  "description": "Experimental module that uses ES6 classes to extend `Array`",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hemanth/node-arey.git"
+  },
+  "keywords": [
+    "ES6",
+    "Array",
+    "utils"
+  ],
+  "scripts": {
+    "prepublish": "6to5 index-es6.js > index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "author": "Hemanth.HM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hemanth/node-arey/issues"
+  },
+  "homepage": "https://github.com/hemanth/node-arey",
+  "devDependencies": {
+    "6to5": "^2.5.0"
+  }
+}
