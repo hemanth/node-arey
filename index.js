@@ -24,6 +24,11 @@ var Arey = (function () {
     return this.slice.call(arguments);
   };
 
+  Arey.prototype.isArray = function (arr) {
+    // Array.isArray(arr) is false :/
+    return arr.constructor.name === "Arey" || Object.prototype.toString.call(arr) === "[object Array]";
+  };
+
   return Arey;
 })();
 

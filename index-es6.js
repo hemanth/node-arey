@@ -5,4 +5,8 @@ export class Arey extends Array {
   of() {
     return this.slice.call(arguments);
   }
+  isArray(arr) {
+    // Array.isArray(arr) is false :/
+  	return arr.constructor.name === 'Arey' || Object.prototype.toString.call(arr) === '[object Array]';
+  }
 }
