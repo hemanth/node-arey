@@ -1,10 +1,10 @@
 {
   "name": "arey",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Experimental module that uses ES6 classes to extend `Array`",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "prepublish": "6to5 index-es6.js > index.js"
   },
   "repository": {
     "type": "git",
@@ -15,9 +15,6 @@
     "Array",
     "utils"
   ],
-  "scripts": {
-    "prepublish": "6to5 index-es6.js > index.js"
-  },
   "files": [
     "index.js"
   ],
