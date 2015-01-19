@@ -1,6 +1,6 @@
 {
   "name": "arey",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Experimental module that uses ES6 classes to extend `Array`",
   "main": "index.js",
   "scripts": {
