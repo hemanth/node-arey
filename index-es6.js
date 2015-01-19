@@ -5,7 +5,7 @@ export class Arey extends Array {
 }
 
 Arey.of = function() {
-    return this.slice.call(arguments);
+    return [].slice.call(arguments);
 };
 
 Arey.isArray = function(arr) {

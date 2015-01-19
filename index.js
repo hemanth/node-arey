@@ -20,17 +20,18 @@ var Arey = (function () {
 
   _inherits(Arey, _Array);
 
-  Arey.prototype.of = function () {
-    return this.slice.call(arguments);
-  };
-
-  Arey.prototype.isArray = function (arr) {
-    // Array.isArray(arr) is false :/
-    return arr.constructor.name === "Arey" || Object.prototype.toString.call(arr) === "[object Array]";
-  };
-
   return Arey;
 })();
 
 exports.Arey = Arey;
+
+
+Arey.of = function () {
+  return [].slice.call(arguments);
+};
+
+Arey.isArray = function (arr) {
+  // Array.isArray(arr) is false :/
+  return arr.constructor.name === "Arey" || Object.prototype.toString.call(arr) === "[object Array]";
+};
 
