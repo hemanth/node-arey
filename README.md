@@ -8,8 +8,8 @@ let Arey = require("arey").Arey;
 
 let list = new Arey();
 
-list.of(1,2,3); // [1,2,3]
-list.isArray([1,2,3]) // true
+Arey.of(1,2,3); // [1,2,3]
+Arey.isArray([1,2,3]) // true
 ```
 
 P.S: More methods are on it's way.
