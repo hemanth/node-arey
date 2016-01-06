@@ -4,7 +4,7 @@
   "description": "Experimental module that uses ES6 classes to extend `Array`",
   "main": "index.js",
   "scripts": {
-    "prepublish": "6to5 index-es6.js > index.js"
+    "prepublish": "babel index-es6.js > index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/hemanth/node-arey",
   "devDependencies": {
-    "6to5": "^2.5.0"
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13"
   }
 }
